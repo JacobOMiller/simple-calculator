@@ -1,0 +1,25 @@
+{
+  "name": "simple-calculator",
+  "authors": [
+    "JacobOMiller <jacob.ohara.miller@gmail.com>"
+  ],
+  "description": "simple calculator app using angular",
+  "main": "",
+  "keywords": [
+    "angular",
+    "calculator",
+    "ui-router"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.8"
+  }
+}

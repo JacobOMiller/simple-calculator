@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Simple Calculator</title>
+    </head>
+    <body ng-app="MyApp">
+        <h1>simple calculator</h1>
+        <nav>
+            <a ui-sref="home">Home</a>
+            <a ui-sref="about">About</a>
+            <a ui-sref="contact">Contact</a>
+            <a ui-sref="postPage">Calculator</a>
+        </nav>
+        <div class="panel panel-primary">
+            <div class="panel-body">
+                <div ui-view></div>
+            </div>
+        </div>
+
+        <script src="/lib/angular/angular.js"></script>
+        <script src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="/js/app.js"></script>
+
+
+    </body>
+</html>
