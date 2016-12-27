@@ -20,8 +20,7 @@ app.config([
             })
             .state('postPage',{
                 url:'/calculator',
-                templateUrl:'templates/calculator.html',
-                controller:'MyApp.calculatorController'
+                templateUrl:'templates/calculator.html'
             });
     }
 ])
