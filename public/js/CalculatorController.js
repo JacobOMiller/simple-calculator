@@ -44,6 +44,15 @@ app.controller ('CalculatorController',[
                 if(operationList[1] == '+'){
                     //add items together
                     var answer = parseInt(operationList[0]) + parseInt(operationList[2]);
+                } else if(operationList[1] == '-'){
+                    //add items together
+                    var answer = parseInt(operationList[0]) - parseInt(operationList[2]);
+                }else if(operationList[1] == '/'){
+                    //add items together
+                    var answer = parseInt(operationList[0]) / parseInt(operationList[2]);
+                } else if(operationList[1] == '*'){
+                    //add items together
+                    var answer = parseInt(operationList[0]) * parseInt(operationList[2]);
                 }
                 $scope.updateDisplay(answer);
                 console.log('the result is' , answer);
