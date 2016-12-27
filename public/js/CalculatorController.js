@@ -49,9 +49,10 @@ app.controller ('CalculatorController',[
                     var answer = parseInt(operationList[0]) - parseInt(operationList[2]);
                 }else if(operationList[1] == '/'){
                     //add items together
-                    if(operationList[0]== 0 || operationList[2]==0){
-                        $scope.display = 'cannot divide 0 or by 0';
-                        updateDisplay(display);
+                    if(operationList[2]==0){
+                        // $scope.display = 'cannot divide 0 or by 0';
+                        $scope.updateDisplay('cannot divide 0');
+                        return;
                     }
                     var answer = parseInt(operationList[0]) / parseInt(operationList[2]);
                 } else if(operationList[1] == '*'){
